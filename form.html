@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Survey HQs</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+            <header>
+                <h1 id="title">Marvel comics VS DC comics</h1>
+                <p id="description">Marvel or DC comics, which is your favorite?</p>
+            </header>
+
+            
+            <div class="container">
+                <form id="survey-form">
+                    
+                    <div class="data-user">
+                        <label for="name" id="name-label">Name</label><br/>
+                        <input type="text" name="name" id="name" class="box-text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="data-user">
+                        <label for="email" id="email-label">Email</label><br/>
+                        <input type="email" name="email" id="email" class="box-text" placeholder="Enter your email" required>
+                    </div>
+ 
+                    <div class="data-user">
+                        <label for="number" id="number-label" >Age</label><br/>
+                        <input type="number" name="number" id="number" class="box-text" placeholder="Enter your Age">
+                    </div>
+
+                    <div class="data-user">
+                        <p>Gender</p>
+
+                        <label><input  name="user-gender" type="radio">Men</label><br/>
+                        <label><input  name="user-gender" type="radio">Woman</label><br/>
+                        <label><input  name="user-gender" type="radio">Others</label><br/>
+                        
+                        <p class="others-box-text">Others</p>
+                        <textarea name="user-gender" class="box-text"></textarea>
+                        
+                    </div>
+
+                    <div class="data-user">
+                        <p>Marvel or DC comics</p>
+
+                        <select id="dropdown">
+                            <option disabled selected value>Marvel or DC comics</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc-comics">DC comics</option>
+                        </select>
+                        
+                    </div>
+
+                    <div class="data-user">
+                        <p>Which of these movies have you watched? (Select more than one option)</p>
+                        <label for="movie"><input  name="movie" value="the-suicide-squad" type="checkbox">The Suicide Squad</label><br/>
+                        <label for="movie"><input  name="movie" value="spiderman" type="checkbox">Spiderman</label><br/>
+                        <label for="movie"><input  name="movie" value="man-of-steel" type="checkbox">Man of Steel</label><br/>
+                        <label for="movie"><input  name="movie" value="avengers" type="checkbox">Avengers</label><br/>
+                        <label for="movie"><input  name="movie" value="hulk" type="checkbox">Hulk</label><br/>
+                        <label for="movie"><input  name="movie" value="joker" type="checkbox">Joker</label><br/>
+                        <label for="movie" ><input  name="movie" value="black-widow" type="checkbox">Black-Widow</label><br/>
+                        <label for="movie"><input  name="movie" value="wonder-woman" type="checkbox">Wonder Woman 1984 </label><br/>
+                    </div>
+                    
+                    <div class="button">
+                        <button type="submit" id="submit" class="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+    </main>
+</body>
+</html>

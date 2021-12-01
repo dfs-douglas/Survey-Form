@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2E4053 ;
+}
+
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background: linear-gradient(to right, red, blue);
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    padding: 60px;
+}
+
+#title{
+    color: white;
+}
+
+header #description{
+    color: white;
+    font-style: italic;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#survey-form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: #D6DBDF;
+    width: 50%;
+    padding: 40px;
+
+    display: flex;
+    justify-content: start;
+    flex-direction: column; 
+   
+}
+
+form .data-user {
+   margin-top: 5px;
+   margin-bottom: 2px;
+}
+
+.data-user p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#name, #email{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+#number, #dropdown{
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#name, #email, #number, #dropdown{
+      margin-top: 5px;
+      margin-bottom: 15px;
+}
+
+div .others-box-text {
+    margin-top: 15px;
+} 
+
+.box-text {
+    padding: 15px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+label input{
+    margin: 6px;  
+}
+
+div .button{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 40%;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #808B96;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    #survey-form{
+        width: 90%;
+        padding: 20px;
+        font-size: 0.8em;
+    }
+    #name, #email, #number, #dropdown{
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+     
+    div .others-box-text {
+        margin-top: 5px;
+    } 
+    
+    .box-text {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    label input{
+        margin: 5px;  
+    }
+    div .button{
+        margin-top: 5px;
+    }
+
+}
+
+    
+
